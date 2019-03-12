@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="基于构造函数1234567function Circle(r) &amp;#123;     this.r = r; &amp;#125; Circle.PI = 3.14159; Circle.prototype.area = function() &amp;#123;     return Circle.PI * this.r * this.r; &amp;#125; 调用：12var c = new Circle(1.0)">
+<meta name="description" content="基于构造函数1234567function Circle(r) &amp;#123;     this.r = r; &amp;#125; Circle.PI = 3.14159; Circle.prototype.area = function() &amp;#123;     return Circle.PI * this.r * this.r; &amp;#125; 调用12var c = new Circle(1.0);">
 <meta name="keywords" content="陈德坤,陈德坤写字的地方,前端博客,个人博客,IT博客,cdk,前端开发">
 <meta property="og:type" content="article">
 <meta property="og:title" content="两种常见JS面向象写法">
 <meta property="og:url" content="http://yoursite.com/2019/02/22/两种常见JS面向象写法/index.html">
 <meta property="og:site_name" content="陈德坤写字的地方">
-<meta property="og:description" content="基于构造函数1234567function Circle(r) &amp;#123;     this.r = r; &amp;#125; Circle.PI = 3.14159; Circle.prototype.area = function() &amp;#123;     return Circle.PI * this.r * this.r; &amp;#125; 调用：12var c = new Circle(1.0)">
+<meta property="og:description" content="基于构造函数1234567function Circle(r) &amp;#123;     this.r = r; &amp;#125; Circle.PI = 3.14159; Circle.prototype.area = function() &amp;#123;     return Circle.PI * this.r * this.r; &amp;#125; 调用12var c = new Circle(1.0);">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-22T03:42:08.211Z">
+<meta property="og:updated_time" content="2019-02-22T03:43:36.973Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="两种常见JS面向象写法">
-<meta name="twitter:description" content="基于构造函数1234567function Circle(r) &amp;#123;     this.r = r; &amp;#125; Circle.PI = 3.14159; Circle.prototype.area = function() &amp;#123;     return Circle.PI * this.r * this.r; &amp;#125; 调用：12var c = new Circle(1.0)">
+<meta name="twitter:description" content="基于构造函数1234567function Circle(r) &amp;#123;     this.r = r; &amp;#125; Circle.PI = 3.14159; Circle.prototype.area = function() &amp;#123;     return Circle.PI * this.r * this.r; &amp;#125; 调用12var c = new Circle(1.0);">
 
 
 
@@ -331,9 +331,9 @@
 
       
         <h2 id="基于构造函数"><a href="#基于构造函数" class="headerlink" title="基于构造函数"></a>基于构造函数</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">function Circle(r) &#123; </span><br><span class="line">    this.r = r; </span><br><span class="line">&#125; </span><br><span class="line">Circle.PI = 3.14159; </span><br><span class="line">Circle.prototype.area = function() &#123; </span><br><span class="line">    return Circle.PI * this.r * this.r; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="调用："><a href="#调用：" class="headerlink" title="调用："></a>调用：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var c = new Circle(1.0); </span><br><span class="line">console.log(c.area())//3.14159;</span><br></pre></td></tr></table></figure>
+<h3 id="调用"><a href="#调用" class="headerlink" title="调用"></a>调用</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var c = new Circle(1.0); </span><br><span class="line">console.log(c.area())//3.14159;</span><br></pre></td></tr></table></figure>
 <h2 id="类Json写法"><a href="#类Json写法" class="headerlink" title="类Json写法"></a>类Json写法</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var Circle=&#123; </span><br><span class="line">    &quot;PI&quot;:3.14159, </span><br><span class="line">    &quot;area&quot;:function(r)&#123; </span><br><span class="line">        return this.PI * r * r; </span><br><span class="line">    &#125; </span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<h3 id="调用：-1"><a href="#调用：-1" class="headerlink" title="调用："></a>调用：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">console.log(Circle.area(1.0));//3.14159</span><br></pre></td></tr></table></figure>
+<h3 id="调用-1"><a href="#调用-1" class="headerlink" title="调用"></a>调用</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">console.log(Circle.area(1.0));//3.14159</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -366,6 +366,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/03/12/vue-cli3-0项目使用proxy跨域/" rel="prev" title="vue-cli3.0项目使用proxy跨域">
+                vue-cli3.0项目使用proxy跨域 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -442,7 +446,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -479,7 +483,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#基于构造函数"><span class="nav-number">1.</span> <span class="nav-text">基于构造函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#调用："><span class="nav-number">1.1.</span> <span class="nav-text">调用：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#类Json写法"><span class="nav-number">2.</span> <span class="nav-text">类Json写法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#调用：-1"><span class="nav-number">2.1.</span> <span class="nav-text">调用：</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#基于构造函数"><span class="nav-number">1.</span> <span class="nav-text">基于构造函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#调用"><span class="nav-number">1.1.</span> <span class="nav-text">调用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#类Json写法"><span class="nav-number">2.</span> <span class="nav-text">类Json写法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#调用-1"><span class="nav-number">2.1.</span> <span class="nav-text">调用</span></a></li></ol></li></ol></div>
             
 
           </div>
